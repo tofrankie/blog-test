@@ -1,6 +1,6 @@
 # 近期更新
 
-- [换个标题](archives/2024/12.md)
-- [诗经](archives/2024/11.md)
-- [Code Block Highlight](archives/2024/10.md)
-- [Markdown Basic Syntax](archives/2023/1.md)
+- [换个标题](https://github.com/toFrankie/github-blogger-test/issues/12)
+- [诗经](https://github.com/toFrankie/github-blogger-test/issues/11)
+- [Code Block Highlight](https://github.com/toFrankie/github-blogger-test/issues/10)
+- [Markdown Basic Syntax](https://github.com/toFrankie/github-blogger-test/issues/1)
