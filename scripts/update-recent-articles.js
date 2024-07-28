@@ -1,4 +1,4 @@
-import fs from 'node:fs'
+import fs from 'node:fs/promises'
 import path from 'node:path'
 import { Octokit } from '@octokit/rest'
 
@@ -25,7 +25,7 @@ async function getRecentIssues() {
 async function updateRecentArticles() {
   const issues = await getRecentIssues()
 
-  const lines = ['# Recent Articles', '', 'Here are the 5-10 most recently updated articles:', '']
+  const lines = ['# 近期更新', '']
 
   for (const issue of issues) {
     const year = new Date(issue.updated_at).getFullYear()
@@ -34,8 +34,12 @@ async function updateRecentArticles() {
   }
 
   const content = lines.join('\n')
-  const filePath = path.join(__dirname, 'docs', 'recent-update.md')
-  fs.writeFileSync(filePath, content, 'utf8')
+  const filePath = path.join('docs', 'recent-articles.md')
+
+  const dirPath = path.dirname(filePath)
+  await fs.mkdir(dirPath, { recursive: true })
+
+  await fs.writeFile(filePath, content, 'utf8')
 }
 
 updateRecentArticles().catch(err => {
