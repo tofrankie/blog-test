@@ -30,7 +30,7 @@ async function updateRecentArticles() {
   for (const issue of issues) {
     const year = new Date(issue.updated_at).getFullYear()
     const filePath = `archives/${year}/${issue.number}.md`
-    lines.push(`- [${issue.title}](${filePath})`)
+    lines.push(`- [${issue.title}](${issue.html_url || `#${issue.number}`})`)
   }
 
   const content = lines.join('\n')
