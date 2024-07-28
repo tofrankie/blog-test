@@ -22,10 +22,10 @@ async function getRecentIssues() {
   return issues
 }
 
-async function updateRecentUpdates() {
+async function updateRecentArticles() {
   const issues = await getRecentIssues()
 
-  const lines = ['# Recent Updates', '', 'Here are the 5-10 most recently updated articles:', '']
+  const lines = ['# Recent Articles', '', 'Here are the 5-10 most recently updated articles:', '']
 
   for (const issue of issues) {
     const year = new Date(issue.updated_at).getFullYear()
@@ -38,7 +38,7 @@ async function updateRecentUpdates() {
   fs.writeFileSync(filePath, content, 'utf8')
 }
 
-updateRecentUpdates().catch(err => {
+updateRecentArticles().catch(err => {
   console.error(err)
   process.exit(1)
 })

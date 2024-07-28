@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/recent-update.md
-          git commit -m "Update recent articles"
+          git add docs/recent-articles.md
+          git commit -m "docs: update recent articles"
           git push
