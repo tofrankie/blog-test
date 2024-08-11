@@ -6,11 +6,11 @@
 
   <style>
     :root {
-    --fgColor-muted: #636c76;
+    --fgColor-muted: red;
     }
     @media (prefers-color-scheme: dark) {
     :root {
-    --fgColor-muted: #8d96a0;
+    --fgColor-muted: green;
     }
     }
     text {
@@ -22,7 +22,7 @@
     }
   </style>
 
-  <text x="0" y="13"
+  <text x="0" y="14"
     dominant-baseline="middle"
     font-size="16">1118 Views</text>
 </svg>
