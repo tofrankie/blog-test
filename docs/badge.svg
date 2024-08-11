@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="24" viewBox="0 0 120 24"
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="24" viewBox="0 0 270 24"
   preserveAspectRatio="xMinYMid" version="1.1"
 >
 
@@ -13,7 +13,6 @@
     }
     }
     text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     fill: var(--fgColor-muted, var(--color-fg-muted));
@@ -24,5 +23,5 @@
 
   <text x="0" y="14"
     dominant-baseline="middle"
-    font-size="16">1118 Views</text>
+    font-size="16">过去 14 天内浏览量 9999999 次。</text>
 </svg>
