@@ -1,5 +1,6 @@
 # 近期更新
 
+- [For test](https://github.com/toFrankie/github-blogger-test/issues/18)
 - [New Issue](https://github.com/toFrankie/github-blogger-test/issues/17)
 - [换个标题](https://github.com/toFrankie/github-blogger-test/issues/12)
 - [诗经](https://github.com/toFrankie/github-blogger-test/issues/11)
