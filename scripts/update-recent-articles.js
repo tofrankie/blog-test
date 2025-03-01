@@ -28,16 +28,17 @@ async function updateRecentArticles() {
   const lines = ['# 近期更新', '']
 
   for (const issue of issues) {
-    const year = new Date(issue.updated_at).getFullYear()
-    const filePath = `archives/${year}/${issue.number}.md`
     lines.push(`- [${issue.title}](${issue.html_url || `#${issue.number}`})`)
   }
 
   const content = lines.join('\n')
   const filePath = path.join('docs', 'recent-articles.md')
 
-  const dirPath = path.dirname(filePath)
-  await fs.mkdir(dirPath, { recursive: true })
+  const recentArticlesDir = path.dirname(filePath)
+  const dirExists = await fs.stat(recentArticlesDir).catch(() => false)
+  if (!dirExists) {
+    await fs.mkdir(recentArticlesDir, { recursive: true })
+  }
 
   await fs.writeFile(filePath, content, 'utf8')
 }

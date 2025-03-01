@@ -23,18 +23,23 @@ jobs:
       - name: Pull latest changes
         run: git pull origin main
 
-      - name: Run update script
+      - name: Run update-recent-articles script
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
+          GITHUB_USER: toFrankie
+          GITHUB_REPO: github-blogger-test
         run: node scripts/update-recent-articles.js
 
-      - name: Configure git
+      - name: Check if recent-articles.md has changed
+        id: check_changes
+        run: |
+          git diff --exit-code docs/recent-articles.md || echo "file_changed=true" >> $GITHUB_ENV
+
+      - name: Commit changes
+        if: env.file_changed == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-
-      - name: Commit changes
-        run: |
           git add docs/recent-articles.md
           git commit -m "docs: update recent articles"
           git push origin main
