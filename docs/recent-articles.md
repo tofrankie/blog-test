@@ -1,5 +1,6 @@
 # 近期更新
 
+- [222](https://github.com/toFrankie/blog-test/issues/23)
 - [测试](https://github.com/toFrankie/blog-test/issues/22)
 - [测试](https://github.com/toFrankie/blog-test/issues/21)
 - [test 2.0](https://github.com/toFrankie/blog-test/issues/20)
