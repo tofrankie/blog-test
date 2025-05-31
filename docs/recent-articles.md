@@ -1,5 +1,6 @@
 # 近期更新
 
+- [test 2.0](https://github.com/toFrankie/blog-test/issues/20)
 - [test v2.0](https://github.com/toFrankie/blog-test/issues/19)
 - [Markdown Basic Syntax](https://github.com/toFrankie/blog-test/issues/1)
 - [诗经](https://github.com/toFrankie/blog-test/issues/11)
