@@ -7,7 +7,7 @@ const octokit = new Octokit({
 })
 
 const owner = 'toFrankie'
-const repo = 'github-blogger-test'
+const repo = 'blog-test'
 
 async function getRecentIssues() {
   const { data: issues } = await octokit.rest.issues.listForRepo({

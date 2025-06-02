@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: 请勿创建新 Issue
-    url: https://github.com/toFrankie/github-blogger-test/discussions
+    url: https://github.com/toFrankie/blog-test/discussions
     about: 如有问题，请访问 Discussions 联系我们，而不是创建新的 Issue。
