@@ -26,7 +26,7 @@ jobs:
       - name: Run update-recent-articles script
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
-          GITHUB_USER: toFrankie
+          GITHUB_USER: tofrankie
           GITHUB_REPO: blog-test
         run: node scripts/update-recent-articles.js
 

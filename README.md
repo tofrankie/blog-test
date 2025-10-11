@@ -1,6 +1,6 @@
 # GitHub Blogger
 
-[GitHub Blogger](https://github.com/toFrankie/github-blogger) is a VS Code extension that lets you create and manage blog posts with GitHub Issues. Enjoy Markdown editing, preview, and seamless publishing—all powered by GitHub.
+[GitHub Blogger](https://github.com/tofrankie/github-blogger) is a VS Code extension that lets you create and manage blog posts with GitHub Issues. Enjoy Markdown editing, preview, and seamless publishing—all powered by GitHub.
 
 ## ✨ Features
 
@@ -47,10 +47,10 @@ This project is inspired by and built upon the work of the open-source community
 
 ## 📷 Screenshots
 
-![](https://raw.githubusercontent.com/toFrankie/github-blogger/main/images/screenshot-1.png)
-![](https://raw.githubusercontent.com/toFrankie/github-blogger/main/images/screenshot-2.png)
-![](https://raw.githubusercontent.com/toFrankie/github-blogger/main/images/screenshot-3.png)
+![](https://raw.githubusercontent.com/tofrankie/github-blogger/main/images/screenshot-1.png)
+![](https://raw.githubusercontent.com/tofrankie/github-blogger/main/images/screenshot-2.png)
+![](https://raw.githubusercontent.com/tofrankie/github-blogger/main/images/screenshot-3.png)
 
 ## 📚 Related Projects
 
-- [github-issue-toc](https://github.com/toFrankie/github-issue-toc): Generate a table of contents for GitHub Issues
+- [github-issue-toc](https://github.com/tofrankie/github-issue-toc): Generate a table of contents for GitHub Issues

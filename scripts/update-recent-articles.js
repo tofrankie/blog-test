@@ -6,7 +6,7 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 })
 
-const owner = 'toFrankie'
+const owner = 'tofrankie'
 const repo = 'blog-test'
 
 async function getRecentIssues() {
